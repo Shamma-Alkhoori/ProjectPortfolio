@@ -1,0 +1,234 @@
+
+/*imports css animations*/
+@import "compass/css3";
+
+
+/*setting up scroll property for webpage so that scrolling is smooth*/
+html {
+ 	scroll-behavior: smooth;
+}
+
+
+/*removing padding and margin of the body so that videos fit fully in brwoser screen*/
+body { 
+	padding: 0;
+	margin: 0; 
+} 
+
+
+/*dividing page into sections to be able to scroll using buttons*/
+#landingPage{
+	position: relative;	
+    margin: 0px;
+	
+
+}
+
+#Video1 {
+	position: relative;
+	margin: 0px;
+}
+
+#Video2 {
+	position: relative;
+	margin: 0px;
+ 
+}
+
+#Video3 {
+	position: relative;
+	margin: 0px;
+
+}
+
+
+#Video4 {
+	position: relative;
+	margin: 0px;
+}
+
+
+#Video5 {
+	position: relative;
+	margin: 0px;
+}
+
+#Video6 {
+	position: relative;
+	margin: 0px;
+}
+
+#Video7 {
+	position: relative;
+	margin: 0px;
+}
+
+#Video8 {
+	position: relative;
+	margin: 0px;
+}
+
+#Video9 {
+	position: relative;
+	margin: 0px;
+}
+
+
+/*setting up landing page image paddings to help with placement*/
+.Alphapic{
+ padding: 0% 0% 0% 55%;
+}
+
+.Shammapic{	
+padding: 3% 45% 1% 5%;
+}
+
+
+/*setting landing page background image*/
+.LandingPage{
+	background-image: url("images/backgroundimage.jpg");
+}
+
+
+/*setting up heading*/
+.heading{
+	position: absolute;
+	text-align: center;
+	top: 3%;
+	left: 3%;
+}
+
+/*setting up and positioning quote*/
+.quote{
+	width: 735px;
+	position: absolute;
+	text-align: center;
+	top: 70%;
+	right: 2%;
+}
+
+
+/*button text settings*/
+.p1{
+	font-family: 'Courgette', cursive;
+	font-size: 23px;
+}
+
+/*title font settings*/
+h1{
+	font-family: 'Kavoon', cursive;
+	font-size: 100px;
+}
+
+/*sub-heading font settings*/
+.p2{
+	font-size: 55px;
+	font-family: 'Courgette', cursive;
+	color: white;
+}
+
+
+/*quote text settings*/
+.p3{
+	font-size: 35px;
+	font-family: 'Courgette', cursive;
+	color: white;
+}
+
+
+/*Title font settings*/
+.multicolortext {
+    font-family: 'Sniglet', cursive;
+	font-size: 140px;
+	color: white;
+}
+
+
+/*controlling if buttons are hidden or visible*/
+.hidden { visibility: hidden; }
+.unhidden { visibility: visible; }
+
+
+
+/*general button settings*/
+.btn{
+	position: absolute;
+	z-index: 5;  
+	font-family: 'Courgette', cursive;
+  	font-size: 24px;
+  	text-align: center;
+  	cursor: pointer;
+  	outline: none;
+  	color: black;
+  	background-color: white;
+ 	border: none;
+  	border-radius: 0px;
+  	box-shadow: 0 9px #999;
+}
+
+
+/*button for landing page*/
+.btn1{
+	position: absolute;
+	width : 100%;
+	top: 50%;
+	left: 0%;
+	padding: 1% 46%;}
+
+
+/*buttons for subsequent pages*/
+.btn2{
+	position: absolute;
+	width : 100%;
+	top: 80%;
+  	left: 0%;
+	padding: 1% 46%;}
+
+
+/*rewind button*/
+.btn0{
+	position: absolute;
+	color: white;
+  	background-color: grey;
+  	border-radius: 7px;
+	width : 35px;
+	height : 35px;
+	top: 3%;
+  	left: 2%;
+}
+
+
+/*skip button*/
+.skip{
+	position: absolute;
+	color: white;
+  	background-color: grey;
+  	border-radius: 7px;
+	width : 35px;
+	height : 35px;
+	top: 3%;
+  	right: 2%;
+}
+
+
+/*back button*/
+.back{position: absolute;
+	color: white;
+  	background-color: grey;
+  	border-radius: 7px;
+	width : 35px;
+	height : 35px;
+	top: 3%;
+  	right: 6%;
+}
+
+
+/*button behaviour when mouse hovers and when clicked*/
+.btn:hover {background-color: #d0d0d0}
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+

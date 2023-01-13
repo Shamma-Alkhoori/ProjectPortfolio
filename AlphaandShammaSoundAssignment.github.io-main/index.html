@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>The Recital</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css"/>
+
+		<!-- adding google fonts and icons for buttons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Indie+Flower&family=Kavoon&family=Sniglet:wght@800&display=swap" rel="stylesheet">
+
+        <!-- linking javascripts files -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="jquery-3.5.1.min.JS"></script>
+</head>
+
+
+<body>
+
+	
+	
+
+		<!-- code for landing page -->
+		<div class="LandingPage" id="LandingPage" onmouseover="disableScroll()" >
+
+
+			<!-- title text -->
+			<section class="heading">			
+				<span class="multicolortext">The Recital</span>
+				<p class="p2">A story about anxiety</p2>
+			</section>
+
+			<!-- images in landing page -->
+			<img  class="Alphapic" src="images/alpha.png" width="45%">
+			<img   class="Shammapic"  src="images/shamma.png" width="45%" >
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<a href="#Video1"><button  class="btn btn1" onmouseover="changeText()" onmouseout="originalText()" onclick="enableScroll();play0();startTimer0();playVid1()"><p id="p1" class="p1">Let's start!</p></button></a>
+
+			<!-- quote text -->
+			<section class="quote"><p class="p3">Nothing diminishes anxiety faster than action   
+           -Walter Anderson</p2></section>
+
+		</div>
+
+
+
+
+
+		<!-- Code for second page -->
+		<div  id="Video1" onmouseover="disableScroll()"  >
+			<!-- skip button -->
+			<a href="#Video2"><button class="btn skip" onclick="enableScroll();startTimer1();play1();stopVid1();playVid2()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#LandingPage"><button class="btn back" onclick="enableScroll();stopVid2();stop0();hide1()"> <i class="fa fa-fast-backward"></i></button></a>			
+
+			<!-- second page's video -->
+			<video id="Video01" width="100%" height="100%" muted loop>
+  				<source src="images/Firstpage1.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+		
+			<!-- loading piano track -->
+ 			<audio id="audio0" >
+				<source src="audio/Backgroundmusic.mp3" type="audio/mp3" >
+
+			</audio>
+
+			 <!-- button to go to next page that starts playing next page's video and audio -->      	
+			<div id="links1" class="hidden">
+				<a href="#Video2"><button id="some-button1" onclick="enableScroll();startTimer1();play1();stopVid1();playVid2()" class="btn btn2"> NEXT</button></a>
+
+			</div>
+		</div>
+
+
+
+
+		<!-- Code for third page -->
+
+		<div  id="Video2" onmouseover="disableScroll()"  >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid2();stop1();startTimer1();play1();playVid2();hide2()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video3"><button class="btn skip" onclick="enableScroll();startTimer2();play2();stopVid2();stop1();playVid3()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video1"><button class="btn back" onclick="enableScroll();startTimer0();playVid1();stopVid2();stop1();hide2();hide1()"> <i class="fa fa-fast-backward"></i></button></a>			
+			
+			<!-- third page's video -->
+			<video id="Video02" width="100%" height="100%"  muted>
+  				<source src="images/Secondpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- third page audio -->
+			<audio id="audio1" >
+				<source src="audio/Firstpart.mp3" type="audio/mp3">
+
+			</audio>
+			
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links2" class="hidden">
+				<a href="#Video3"><button id="some-button" onclick="enableScroll();startTimer2();play2();stopVid2();stop1();playVid3()" class="btn btn2">NEXT</button></a>
+			</div>			
+		</div>
+
+
+
+
+
+		<!-- Code for fourth page -->
+		<div id="Video3"  onmouseover="disableScroll()"  >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid3();stop2();startTimer2();play2();playVid3();hide3()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video4"><button class="btn skip" onclick="enableScroll();startTimer3();play3();stopVid3();stop2();playVid4()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video2"><button class="btn back" onclick="enableScroll();play1();startTimer1();playVid2();stopVid3();stop2();hide3();hide2()"> <i class="fa fa-fast-backward"></i></button></a>
+
+
+			<!-- fourth page's video -->
+			<video id="Video03" width="100%" height="100%"  muted>
+  				<source src="images/Thirdpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- fourth page audio -->
+			<audio id="audio2" >
+				<source src="audio/Secondpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links3" class="hidden">
+				<a href="#Video4"><button id="some-button" onclick="enableScroll();startTimer3();play3();playVid4();stop2();stopVid3()" class="btn btn2">NEXT</button></a>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Code for fifth page -->
+		<div id="Video4"  onmouseover="disableScroll()" >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid4();stop3();startTimer3();play3();playVid4();hide4()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video5"><button class="btn skip" onclick="enableScroll();startTimer4();play4();stopVid4();stop3();playVid5()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video3"><button class="btn back" onclick="enableScroll();play2();startTimer2();playVid3();stopVid4();stop3();hide4();hide3()"> <i class="fa fa-fast-backward"></i></button></a>
+
+			<!-- fifth page's video -->
+			<video id="Video04" width="100%" height="100%"  muted>
+  				<source src="images/Fourthpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- fifth page's audio -->
+			<audio id="audio3" >
+				<source src="audio/Thirdpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links4" class="hidden">
+				<a href="#Video5"><button id="some-button" onclick="enableScroll();startTimer4();play4();playVid5();stop3();stopVid4()" class="btn btn2">NEXT</button></a>
+			</div>
+			</div>
+
+
+
+
+	    <!-- Code for sixth page -->
+		<div id="Video5"  onmouseover="disableScroll()"  >
+
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid5();stop4();startTimer4();play4();playVid5();hide5()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video6"><button class="btn skip" onclick="enableScroll();startTimer5();play5();stopVid5();stop4();playVid6()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video4"><button class="btn back" onclick="enableScroll();play3();startTimer3();playVid4();stopVid5();stop4();hide5();hide4()"> <i class="fa fa-fast-backward"></i></button></a>
+
+			<!-- sixth page's video -->
+			<video id="Video05" width="100%" height="100%"  muted>
+  				<source src="images/Fifthpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- sixth page's audio -->
+			<audio id="audio4" >
+				<source src="audio/Fourthpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links5" class="hidden">
+				<a href="#Video6"><button id="some-button" onclick="enableScroll();startTimer5();play5();playVid6();stop4();stopVid5()" class="btn btn2">NEXT</button></a>
+			</div>
+		</div>
+
+
+
+
+		<!-- Code for seventh page -->
+		<div id="Video6"  onmouseover="disableScroll()"  >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid6();stop5();startTimer5();play5();playVid6();hide6()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video7"><button class="btn skip" onclick="enableScroll();startTimer6();play6();stopVid6();stop5();playVid7()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video5"><button class="btn back" onclick="enableScroll();play4();startTimer4();playVid5();stopVid6();stop5();hide6();hide5()"> <i class="fa fa-fast-backward"></i></button></a>
+
+
+			<!-- seventh page's video -->
+			<video id="Video06" width="100%" height="100%"  muted>
+  				<source src="images/Sixthpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- seventh page's audio -->
+			<audio id="audio5" >
+				<source src="audio/Fifthpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links6" class="hidden">
+				<a href="#Video7"><button id="some-button" onclick="enableScroll();startTimer6();play6();playVid7();stop5();stopVid6()" class="btn btn2">NEXT</button></a>
+			</div>
+		</div>
+
+
+
+
+		<!-- Code for eigthth page -->		
+		<div id="Video7"   onmouseover="disableScroll()" >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid7();stop6();startTimer6();play6();playVid7();hide7()"> <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video8"><button class="btn skip" onclick="enableScroll();startTimer7();play7();stopVid7();stop6();playVid8()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video6"><button class="btn back" onclick="enableScroll();play5();startTimer5();playVid6();stopVid7();stop6();hide7();hide6()"> <i class="fa fa-fast-backward"></i></button></a>
+
+
+			<!-- eigthth page's video -->
+			<video id="Video07" width="100%" height="100%"  muted>
+  				<source src="images/Seventhpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+
+			<!-- eigthth page's audio -->
+			<audio id="audio6" >
+				<source src="audio/Sixthpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links7" class="hidden">
+				<a href="#Video8"><button id="some-button" onclick="enableScroll();startTimer7();play7();playVid8();stop6();stopVid7()" class="btn btn2">NEXT</button></a>
+			</div>
+		</div>
+
+
+
+
+		<!-- Code for nineth page -->
+		<div id="Video8"  onmouseover="disableScroll()"  >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid8();stop7();startTimer7();play7();playVid8();hide8()" > <i class="material-icons">&#xe042;</i></button>
+
+			<!-- skip button -->
+			<a href="#Video9"><button class="btn skip" onclick="enableScroll();startTimer8();play8();stopVid8();stop7();playVid9();stop0()"> <i class="fa fa-fast-forward"></i></button></a>
+
+			<!-- back to previous page button -->
+			<a href="#Video7"><button class="btn back" onclick="enableScroll();play6();startTimer6();playVid7();stopVid8();stop7();hide8();hide7()"> <i class="fa fa-fast-backward"></i></button></a>
+
+			<!-- nineth page's video -->
+			<video id="Video08" width="100%" height="100%"  muted>
+  				<source src="images/Eigth.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- nineth page's audio -->
+			<audio id="audio7" >
+				<source src="audio/Seventhpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to next page that starts playing next page's video and audio -->
+			<div id="links8" class="hidden">
+				<a href="#Video9"><button id="some-button" onclick="enableScroll();playVid9();startTimer8();play8();stop0();stop7();stopVid8()" class="btn btn2">NEXT</button></a>
+			</div>
+		</div>
+
+
+
+
+		<!-- Code for tenth page -->
+		<div id="Video9"  onmouseover="disableScroll()"  >
+
+			<!-- rewind button -->
+			<button class="btn btn0" onclick="stopVid9();stop8();startTimer8();play8();playVid9();hide9()"> <i class="material-icons">&#xe042;</i></button>
+			
+			<!-- skip button -->
+			<a href="#Video8"><button class="btn back" onclick="enableScroll();play7();startTimer7();playVid8();stopVid9();stop8();hide9();play0();hide8()"> <i class="fa fa-fast-backward"></i></button></a>
+
+			<!-- tenth page's video -->
+			<video id="Video09" width="100%" height="100%" muted>
+  				<source src="images/Ninethpart.mp4" type="video/mp4">
+  				<source src="movie.ogg" type="video/ogg">
+			</video>
+
+			<!-- tenth page's audio -->
+			<audio id="audio8" >
+				<source src="audio/Eighthpart.mp3" type="audio/mp3">
+
+			</audio>
+
+			<!-- button to go to landing page -->
+			<div id="links9" class="hidden">
+				<a href="#LandingPage"><button id="some-button" onclick="enableScroll();stopVid9();stop8()" class="btn btn20">BACK TO START</button></a>
+			</div>
+			
+		</div>
+
+		<!-- linking javascript file -->
+		<script src="script.js"></script>			
+</body>
+</html>

@@ -1,0 +1,13 @@
+-fix the logo part
+-Colors and font style to  be adjusted
+-fix next and previous buttons in review section
+-reduce the size of boxes in service section to make it look separated
+-make all boxes equal
+-check all images are fine- if yes , we can color them different colors of boxes
+-sizing can be done for the images in end
+-adjust the position of the main image
+-make a video player on main section
+-finalize elements in footer and header---will use same for all the pages
+-add image, name, one line in review section
+-make the product page
+-finally, do whatever you think is best to make the website look great
