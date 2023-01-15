@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> perspectives: how-to selfcare </title>
+    <link rel="stylesheet" href="stylemain.css">
+    <script src="scriptmain.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>   
+
+<body>
+  <div class="logo">
+    <img src="Logo.PNG">
+  </div>
+    <div id="container1">
+      <div class="navbar">
+        <a href="#container1" id="home" class="newAtt">Home</a>
+        <a href="#container2" id="started">Start Experience</a>
+        <a href="index1.html" id="kit">DIY Kit</a>
+        <a href="#footer" id="about">About Us</a>
+        
+      </div>
+      <div class="shape"></div>
+      <div class="text">
+      <h1>self care: perspectives on how-to</h1>
+     <h2>normalizing what makes you feel good</h2> 
+      <p>Our friends take you on their journey to self care to get you inspired to customize your own self care kit. They remind us that the unusual can help us do good to ourselves more than anything. They scream their hearts out, they act like someone who inspires them, they learn a new skill, and they don't do baths in bathtubs.  </p>
+      <p style= "color:#008962bd;">remember: clear your mind, treat yourself, go out! </p> 
+      <a href="#container2" class="class1"> ↓ Let's go ↓ </a>
+    </div> 
+  </div>
+
+    <div id="container2">
+      <div class="shape"></div>
+        <div id="form-wrapper">
+          <form action="/p/quote.php" method="GET">
+            <h3>time for self care?</h3>
+            <h4>/no excuses/: self care is what you make it, be creative!</h4>
+            <div id="time-amount-slider">
+              <input type="radio" name="time-amount" id="1" value="1" required onclick="check()">
+              <label for="1" data-time-amount="<hour"></label>
+              <input type="radio" name="time-amount" id="2" value="2" required onclick="check()">
+              <label for="2" data-time-amount="2 hrs"></label>
+              <input type="radio" name="time-amount" id="3" value="3" required onclick="check()">
+              <label for="3" data-time-amount="a day"></label>
+              <input type="radio" name="time-amount" id="4" value="4" required onclick="check()">
+              <label for="4" data-time-amount="weekend+"></label>
+            </div>
+          </form>
+
+          <a href="#container3" class="button" >Go!</a>
+        </div>
+    </div>
+
+    <div id="container3">
+      <div class="grid-row reverse video-gallery">
+        <input type="radio" value="1" name="video-list" id="video-1" /><label for="video-1">Nana's 20 min routine</label>
+        <input type="radio" value="2" name="video-list" id="video-2" /><label for="video-2">Buckle's 2 hr routine</label>
+        <input type="radio" value="3" name="video-list" id="video-3" /><label for="video-3">Clippie's 1 day routine </label>
+        <input type="radio" value="4" name="video-list" id="video-4" /><label for="video-4">Muggy's week routine</label>
+
+        <div class="video video-1">
+        <iframe src="https://player.vimeo.com/video/487991042?autopause=1&byline=0&portrait=0&title=0" width="960" height="540" frameborder="0" allowfullscreen></iframe>
+       </div>
+      
+       <div class="video video-2">
+        <iframe src="https://player.vimeo.com/video/487990995?autopause=1&byline=0&portrait=0&title=0" width="960" height="540" frameborder="0" allowfullscreen></iframe>
+       </div>
+      
+       <div class="video video-3">
+        <iframe src="https://player.vimeo.com/video/487990955?autopause=1&byline=0&portrait=0&title=0" width="960" height="540" frameborder="0" allowfullscreen></iframe>
+       </div>
+      
+       <div class="video video-4">
+        <iframe src="https://player.vimeo.com/video/487991101?autopause=1&byline=0&portrait=0&title=0" width="960" height="540" frameborder="0" allowfullscreen></iframe>
+       </div>  
+       
+       <a href="index.html" class="button2">DIY Self Care Kit</a>
+
+       </div>
+          </div>
+
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="info">
+      <div class="BB">
+        <h4>Meet & Contact the Team</h4>
+
+        <div class="Team">
+        <div class="Team1">
+          <div class = "Member">
+            <img class="MemberPhoto" src="Soojin.jpg" alt="not working">
+            <p style="color:black;">Soojin Lee</p>
+            <p style="color:#474E49;">My self care routine: sniff freshly washed clothes, scroll through childhood photos</p>
+          </div>
+
+          <div class = "Member">
+            <img class = "MemberPhoto" src="Aisha.jpg">
+            <p style="color:black;">Aisha Hodzic</p>
+            <p style="color:#474E49;">My self care routine: rearrange my desk or room, explore new coffee shops</p>
+          </div>
+        </div>
+
+        <div class="Team2">
+          <div class = "Member">
+            <div class = "MemberPhoto" >
+              <center><img src="Hessa.jpg" style="height: 150px"></center>
+            </div>
+            <p style="color:black;">Hessa AlAbbas</p>
+            <p style="color:#474E49;">My self care routine: long hot showers, late night car jam sessions with friends</p>
+          </div>
+         
+
+          <div class = "Member">
+            <div class = "MemberPhoto" >
+              <center><img src="Shreya.jpg" style="height: 150px"></center>
+            </div>
+            <p style="color:black;">Shreya Goel</p>
+            <p style="color:#474E49;">My self care routine: dancing, painting, practicing inhuman contorsion poses</p>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    
+
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" title="Facebook"></a><br><br>
+        <a href="https://twitter.com/?lang=en" target="_blank" class="fa fa-twitter" title="Twitter"></a><br><br>
+        <a href="https://www.instagram.com/?hl=en" target="_blank" class="fa fa-instagram" title="Instagram"></a><br><br>
+        <a href="https://in.linkedin.com/" target="_blank" class="fa fa-linkedin" title="LinkedIn"></a><br><br>
+        <a href="https://www.pinterest.com/" target="_blank" class="fa fa-pinterest" title="Pinterest"></a>
+      </div>
+    </div>
+    <div class="copyright">
+      Developed by Hessa AlAbbas, Soojin Lee, Shreya Goel, and Aisha Hodzic <br>
+      &copy; 2020 All rights reserved | howto-selfcare.com 
+    </div>
+  </footer>
+          
+</body>
+</html>

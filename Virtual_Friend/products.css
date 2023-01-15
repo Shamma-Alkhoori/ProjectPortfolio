@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product-detail {
+	display: flex;
+}
+
+.imagery {
+	flex: 1 1 50%;
+	width: 50%;
+	height: 100vh;
+	padding: 30px;
+	background-color: #2484E4;
+	transition: 1.0s;
+}
+.imagery img {
+	width: 100%;
+	height: 100%;
+	animation: fadein 1s ease-in-out forwards;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+.detail {
+	flex: 1 1 40%;
+	width: 40%;
+	padding: 50px;
+	padding-top: 0px;
+}
+
+.detail h1 {
+	color: #212121;
+	font-size: 32px;
+	font-weight: 900;
+}
+.detail h2 {
+	color: #53565A;
+	font-size: 22px;
+	font-weight: 700px;
+}
+.detail h3 {
+	color: #53565A;
+	font-size: 22px;
+	font-weight: 300;
+	
+}
+
+.btn_grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+}
+
+.btn_grid .btn_wrap {
+	flex: 1 1 50%;
+	width: 50%;
+	padding: 15px;
+}
+
+.btn_grid .btn_wrap2 {
+	flex: 1 1 50%;
+	width: 50%;
+	padding: 15px;
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 15px;
+
+	appearance: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	border: 2px solid #EEE;
+
+	color: #313131;
+	font-size: 20px;
+	font-weight: 700;
+
+	transition: 1.4s;
+}
+button:hover {
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.size {
+	position: relative;
+	z-index: 1;
+}
+button.size::before,
+button.size::after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+	transition: 0.6s;
+}
+button.size::after {
+	z-index: -1;
+	background-color: #FFF;
+	border: 3px solid #EEE;
+}
+button.size::before {
+	z-index: -2;
+	background-image: linear-gradient(to right, #fc8ccf, #d597ff);
+}
+button.size.selected::after {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.colours .btn_wrap .purple.selected {
+	background-color: #a336c4;
+	color: #FFF;
+}
+
+.colours .btn_wrap .blue.selected {
+	background-color: #2484E4;
+	color: #FFF;
+}
+
+.colours .btn_wrap .pink.selected {
+	background-color: #f144b8;
+	color: #FFF;
+}
+
+.colours .btn_wrap .yellow.selected {
+	background-color: #FFCE00;
+	color: #FFF;
+}
+
+.colours .btn_wrap .orange.selected {
+	background-color: #FF6C37;
+	color: #FFF;
+}
+
+.colours .btn_wrap .teal.selected {
+	background-color: #29c979;
+	color: #FFF;
+}
+
+.submit {
+	margin-top: 50px;
+	margin-left: -360px;
+	background-image: linear-gradient(to right, transparent 50%, #fa72c3 50%, #E596E9 100%);
+	background-size: 200%;
+	background-position: 0% 50%;
+	transition: 0.8s;
+}
+.submit:hover {
+	color: #FFF;
+	background-position: 100% 50%;
+}
+
+@keyframes fadein {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}

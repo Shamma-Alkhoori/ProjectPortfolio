@@ -1,0 +1,10 @@
+/gpt-2/bin
+/gpt-2/include
+/gpt-2/lib
+/gpt-2/pyvenv.cfg
+/gpt-2/src/samples
+/gpt-2/src/checkpoint
+/gpt-2/src/models
+/gpt-2/src/lyrics-data.csv
+/im_server/node_modules
+/im_server/package-lock.json
